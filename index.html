@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Landing Page</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>Tfood</a>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Welcome to Tfood Kitchen</h1>
+                <h2>Experience the Best Quality of Food</h2>
+                <p>Discover our amazing food delicacies. We provide high quality organic food with fresh ingredients to keep you healthy and delighted. A trial will convice you.</p>
+                <a href="#menu" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/log.png" alt="hero-image">
+            </div>
+        </section>
+        <!-- Feature Section -->
+         <section class="menu" id="menu">
+            <h3 class="menu-heading">Browse the Menu for <br> <span> Our Featured Delicacies</span></h3>
+            <div class="menu-cards">
+                <div class="menu-category">
+                    <i class="fas fa-coffee"></i>
+                    <h4>Breakfast</h4>
+                    <p>Enjoy our delicious and satisfying breakfast. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired breakfast, crafted with care and passion.</p>
+                </div>
+
+                <div class="menu-category">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h4>Lunch</h4>
+                    <p>Enjoy our delicious and satisfying lunch. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired lunch, crafted with care and passion.</p>
+                </div>
+
+                <div class="menu-category">
+                    <i class="fas fa-hamburger"></i>
+                    <h4>Dinner</h4>
+                    <p>Enjoy our delicious and satisfying dinner. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired dinner, crafted with care and passion.</p>
+                </div>
+
+                <div class="menu-category">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Main Dishes</h4>
+                    <p>Enjoy our delicious and satisfying dishes. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired dishes, crafted with care and passion.</p>
+                </div>
+
+                <div class="menu-category">
+                    <i class="fas fa-glass-martini-alt"></i>
+                    <h4>Drinks</h4>
+                    <p>Enjoy our delicious and satisfying drinks. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired drinks, crafted with care and passion.</p>
+                </div>
+
+                <div class="menu-category">
+                    <i class="fas fa-ice-cream"></i>
+                    <h4>Desserts</h4>
+                    <p>Enjoy our delicious and satisfying desserts. Join us to experience the tease of nature.</p>
+                    <p>Indulge in our homely-inspired desserts, crafted with care and passion.</p>
+                </div>
+            </div>
+         </section>
+         <!-- About Us Section -->
+        <section class="about-us" id="about-us">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/explore.png" alt="about-us-image">
+                </div>
+                <div class="about-content">
+                    <h3>We Provide Healthy Food for Your Daily Consumption</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestias! Libero in tenetur eligendi quidem ab. Laboriosam reiciendis veritatis, nostrum quo fugiat explicabo consectetur aperiam dicta! Eius nihil sapiente ipsa? Aliquam, molestiae aliquid amet porro, assumenda quasi laboriosam impedit tempore exercitationem veniam vel vitae? Possimus sunt voluptates nemo perspiciatis molestias?</p>
+                    <a href="#" class="btn">More About Us</a>
+                </div>
+            </div>
+        </section>
+        <footer id="contacts">
+            <h5>Contact Us At:</h5>
+            <div class="share">
+                <a href="ronkeadun1@yahoo.com" class="btn">E-mail</a>
+                <a href="https:/m.facebook.com/help" class="btn">facebook</a>
+                <a href="https://help.instagram.com" class="btn">instagram</a>
+            </div>
+            <p class="credit">created by <span>Tfood</span> | all rights reserved! <br> Copyright &copy;2025 </p>
+        </footer>
+        <script>
+            let menu = document.querySelector("#menu-bar")
+            let navbar = document.querySelector(".navbar")
+
+            menu.onclick = () => {
+                menu.classList.toggle("fa-times")
+                navbar.classList.toggle("active")
+            }
+
+            window.onscroll = () => {
+                menu.classList.remove("fa-times")
+                navbar.classList.remove("active")
+            }
+        </script>
+    </body>
+</html>
